@@ -2,7 +2,7 @@ name: SoloSignal Daily Newsletter
 
 on:
   schedule:
-    - cron: "0 13 * * *"   # 8:00 AM CST (UTC-5) every day
+    - cron: "0 13 */2 * *"   # 8:00 AM CST (UTC-5) every other day
   workflow_dispatch:         # lets you trigger it manually from GitHub UI too
 
 jobs:
