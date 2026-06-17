@@ -85,7 +85,9 @@ def build_html(data: dict) -> str:
         problems_html += f"""
         <div style="margin-bottom:20px;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;">
           <div style="padding:16px 20px;display:flex;align-items:flex-start;gap:12px;">
-            <div style="min-width:26px;height:26px;border-radius:50%;background:{c["num"]};color:{c["num_text"]};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;flex-shrink:0;margin-top:1px;">{str(i+1).zfill(2)}</div>
+            <div style="min-width:26px;height:26px;border-radius:50%;background:{c["num"]};color:{c["num_text"]};display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;font-weight:600;">
+              {i+1}
+            </div>
             <div>
               <p style="margin:0 0 4px;font-size:15px;font-weight:600;color:#111;">{p.get("title","")}</p>
               <p style="margin:0;font-size:12px;color:#888;">📍 {p.get("source","")} &nbsp;·&nbsp; {p.get("signal","")}</p>
